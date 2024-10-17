@@ -65,7 +65,7 @@ $ decrypt -i /path/to/orms_core_config.xml -o ./decrypted.xml
 			if outputFilePath == "" {
 				outputFilePath = "orms_core_config_decrypted.xml"
 			}
-			err = utils.WriteFile(outputFilePath, decryptedData)
+			err = utils.WriteFile(decryptedData, outputFilePath)
 			if err != nil {
 				fmt.Println("Error writing to file:", err)
 				os.Exit(1)

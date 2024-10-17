@@ -60,7 +60,7 @@ $ encrypt -i /path/to/orms_core_config.xml -o ./encrypted.xml
 		if outputFilePath == "" {
 			outputFilePath = "orms_core_config_encrypted.xml"
 		}
-		err = utils.WriteFile(outputFilePath, encryptedData)
+		err = utils.WriteFile(encryptedData, outputFilePath)
 		if err != nil {
 			fmt.Println("Error writing to file:", err)
 			os.Exit(1)
