@@ -1,4 +1,4 @@
-module ORMEncrption
+module ORMEncryption
 
 go 1.23.2
 

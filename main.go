@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "ORMEncrption/cmd"
+import "ORMEncryption/cmd"
 
 func main() {
 	cmd.Execute()

@@ -1,4 +1,4 @@
-# ORMEncrption
+# ORMEncryption
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -6,7 +6,7 @@ A command-line tool for encrypting and decrypting `orms_core_config.xml` files u
 
 ## Table of Contents
 
-1. [ORMEncrption](#ormencrption)
+1. [ORMEncryption](#ormencrption)
    1. [Table of Contents](#table-of-contents)
    2. [Installation](#installation)
    3. [Usage](#usage)
@@ -23,22 +23,22 @@ A command-line tool for encrypting and decrypting `orms_core_config.xml` files u
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/ORMEncrption.git
+   git clone https://github.com/shevonkuan/ORMEncryption.git
    ```
 
 2. Navigate to the project directory:
    ```sh
-   cd ORMEncrption
+   cd ORMEncryption
    ```
 
 3. Build and install the tool:
    ```sh
-   go build -o ORMEncrption main.go
+   go build -o ORMEncryption main.go
    ```
 
 4. Optionally, move the binary to a location in your PATH if you want it available globally:
    ```sh
-   sudo mv ORMEncrption /usr/local/bin/
+   sudo mv ORMEncryption /usr/local/bin/
    ```
 
 ## Usage
@@ -48,7 +48,7 @@ A command-line tool for encrypting and decrypting `orms_core_config.xml` files u
 The `encrypt` command is used to encrypt an XML configuration file (`orms_core_config.xml`) using AES/GCM and Base64 encoding. The encrypted content will be saved in a specified output file.
 
 ```sh
-ORMEncrption encrypt -i <input-file-path> -o <output-file-path>
+ORMEncryption encrypt -i <input-file-path> -o <output-file-path>
 ```
 
 - `-i, --input`: Path to the input file (required).
@@ -59,7 +59,7 @@ ORMEncrption encrypt -i <input-file-path> -o <output-file-path>
 The `decrypt` command is used to decrypt an AES/GCM encrypted and Base64 encoded XML configuration file (`orms_core_config.xml`). The decrypted content can be saved in a specified output file or printed directly into the terminal if no output file is provided.
 
 ```sh
-ORMEncrption decrypt -i <input-file-path> [-o <output-file-path>] [--no-output]
+ORMEncryption decrypt -i <input-file-path> [-o <output-file-path>] [--no-output]
 ```
 
 - `-i, --input`: Path to the input file (required).
@@ -70,7 +70,7 @@ ORMEncrption decrypt -i <input-file-path> [-o <output-file-path>] [--no-output]
 
 ### Encrypt Example
 ```sh
-$ ORMEncrption encrypt -i /path/to/orms_core_config.xml -o ./encrypted.xml
+$ ORMEncryption encrypt -i /path/to/orms_core_config.xml -o ./encrypted.xml
 ```
 
 ### Decrypt Example
@@ -80,7 +80,7 @@ $ ORMEncrption decrypt -i /path/to/encrypted.xml -o ./decrypted.xml
 
 ### Print Decrypted Content to Terminal
 ```sh
-$ ORMEncrption decrypt -i /path/to/encrypted.xml --no-output
+$ ORMEncryption decrypt -i /path/to/encrypted.xml --no-output
 ```
 
 ## Contributing

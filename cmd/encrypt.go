@@ -16,7 +16,7 @@ limitations under the License.
 package cmd
 
 import (
-	"ORMEncrption/utils"
+	"ORMEncryption/utils"
 	"fmt"
 	"os"
 
